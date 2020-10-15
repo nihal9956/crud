@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import { useSelector } from 'react-redux';
+import AllPost from './AllPost';
 import './App.css';
+import PostForm from './PostForm';
 
 function App() {
+
+  const post = useSelector(state => state.post)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <PostForm/>
+     {console.log(post)}
+     
+     {post.length>0?<AllPost/>:null}
     </div>
   );
 }

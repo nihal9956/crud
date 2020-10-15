@@ -1,0 +1,24 @@
+.post{
+    flex:0.6;
+    background-color: rgb(231, 228, 228);
+    box-shadow: (0.5 0.5 0.5 gray);
+    margin-left:4%;
+
+}
+
+.post__container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myPost{
+
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:5%;
+    margin-right:30%;
+}
